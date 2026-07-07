@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Դուք հրավիրված եք</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Armenian:wght@300;400;500;600;700&family=Noto+Serif+Armenian:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 1. Hero - Envelope Animation -->
+    <header class="hero" id="hero">
+        <div class="envelope-wrapper" role="button" tabindex="0" aria-label="Բացել հրավիրատոմսը">
+            <div class="envelope" id="envelope">
+                <div class="flap top"></div>
+                <div class="flap bottom"></div>
+                <div class="flap left"></div>
+                <div class="flap right"></div>
+                <div class="letter" id="letter">
+                    <div class="letter-content">
+                        <h1>Դուք հրավիրված եք</h1>
+                        <p>2026թ. շրջանավարտների վերջին դասին</p>
+                    </div>
+                </div>
+                <div class="wax-seal"></div>
+            </div>
+            <div class="instruction">Սեղմեք բացելու համար</div>
+        </div>
+        <div class="hero-text-reveal" id="hero-text-reveal">
+            <h2>Հիշարժան իրադարձություն</h2>
+        </div>
+    </header>
+
+    <!-- Rest of the site content (hidden initially) -->
+    <div id="site-content" hidden>
+        <!-- 2. Photo Gallery -->
+        <section class="gallery-section reveal">
+            <div class="container">
+                <div class="photo-grid">
+                    <div class="photo-item"><img src="assets/group_photo_1.webp" alt="Group Photo 1"></div>
+                    <div class="photo-item"><img src="assets/group_photo_2.webp" alt="Group Photo 2"></div>
+                    <div class="photo-item"><img src="assets/group_photo_3.webp" alt="Group Photo 3"></div>
+                    <div class="photo-item"><img src="assets/group_photo_4.webp" alt="Group Photo 4"></div>
+                    <div class="photo-item"><img src="assets/group_photo_5.webp" alt="Group Photo 5"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Countdown Timer -->
+        <section class="countdown-section reveal">
+            <div class="container">
+                <div class="countdown-container">
+                    <div class="countdown-item">
+                        <span id="days">00</span>
+                        <label>Օր</label>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="countdown-item">
+                        <span id="hours">00</span>
+                        <label>Ժամ</label>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="countdown-item">
+                        <span id="minutes">00</span>
+                        <label>Րոպե</label>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="countdown-item">
+                        <span id="seconds">00</span>
+                        <label>Վայրկյան</label>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. About the Event -->
+        <section class="about-section reveal">
+            <div class="container">
+                <div class="paper-box">
+                    <h2>Շրջանավարտներ</h2>
+                    <p>թող ձեր ճանապարհը լինի լուսավոր, երազանքները՝ մեծ, իսկ հաջողությունները՝ անսահման։ Դպրոցի հիշողությունները միշտ թող ջերմացնեն ձեր սրտերը 💫
+:</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Background Music -->
+        <audio id="bg-music" src="assets/music.mp3" loop></audio>
+
+        <!-- 6. Gallery / Classmates Grid -->
+        <section class="classmates-section reveal">
+            <div class="container">
+                <div class="teachers-row">
+    <div class="teacher-mention">
+        <div class="img-wrapper">
+            <img src="assets/teacher_portrait_1.png" alt="Դասղեկ 1" loading="lazy" decoding="async">
+        </div>
+        <span class="teacher-name">Դասղեկ 9Ա</span>
+    </div>
+
+    <div class="teacher-mention">
+        <div class="img-wrapper">
+            <img src="assets/teacher_portrait_2.png" alt="Դասղեկ 2" loading="lazy" decoding="async">
+        </div>
+        <span class="teacher-name">Դասղեկ 9Բ</span>
+    </div>
+
+    <div class="teacher-mention">
+        <div class="img-wrapper">
+            <img src="assets/teacher_portrait_3.png" alt="Դասղեկ 3" loading="lazy" decoding="async">
+        </div>
+        <span class="teacher-name">Դասղեկ 9Գ</span>
+    </div>
+</div>
+                <h2 class="section-title">Շրջանավարտներ</h2>
+                <div class="classmates-grid">
+                    <div class="classmate-item">
+    
+    <div class="multi-photos">
+        <div class="img-wrapper">
+            <img src="assets/image.png" alt="9Ա">
+        </div>
+
+    <span class="name">9Ա</span>
+</div>
+                    <div class="classmate-item">
+    
+    <div class="multi-photos">
+        <div class="img-wrapper">
+            <img src="assets/images.png" alt="9Բ">
+        </div>
+
+    <span class="name">9Բ</span>
+</div>
+                    <div class="classmate-item">
+                        <div class="img-wrapper"><img src="assets/imagee.png" alt="9Գ" loading="lazy" decoding="async"></div>
+                        <span class="name">9Գ</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Schedule / Calendar -->
+        <section class="calendar-section reveal">
+            <div class="container">
+                <div class="calendar-wrapper">
+                    <h3>Մայիս 2026</h3>
+                    <div class="calendar-grid">
+                        <div class="day-name">Կ</div><div class="day-name">Ե</div><div class="day-name">Ե</div><div class="day-name">Չ</div><div class="day-name">Հ</div><div class="day-name">Ո</div><div class="day-name">Շ</div>
+                        <!-- padding -->
+                        <div class="day disabled">31</div><div class="day">1</div><div class="day">2</div><div class="day">3</div><div class="day">4</div><div class="day">5</div><div class="day">6</div>
+                        <div class="day">7</div><div class="day">8</div><div class="day">9</div><div class="day">10</div><div class="day">11</div><div class="day">12</div><div class="day">13</div>
+                        <div class="day">14</div><div class="day">15</div><div class="day">16</div><div class="day">17</div><div class="day">18</div><div class="day">19</div><div class="day">20</div>
+                        <div class="day">21</div><div class="day highlight">22</div><div class="day">23</div><div class="day">24</div><div class="day">25</div><div class="day">26</div><div class="day">27</div>
+                        <div class="day">28</div><div class="day">29</div><div class="day">30</div><div class="day disabled">1</div><div class="day disabled">2</div><div class="day disabled">3</div><div class="day disabled">4</div>
+                    </div>
+                    <div class="event-time">8:00 - N1 հ/դ </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. Call to Action -->
+        <section class="cta-section reveal">
+            <div class="container">
+                <h2 class="section-title">Ձեր ներկայությունը սպասված է:</h2>
+                <button class="gold-btn" id="rsvp-btn" type="button">Հաստատել մասնակցությունը</button>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Շրջանավարտների դասարան 2026: Բոլոր իրավունքները պաշտպանված են:</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
